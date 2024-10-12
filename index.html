@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      type="imagex/png"
+      href="./imgs/logoPizzaria.ico"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Pizzaria Home</title>
+  </head>
+  <body>
+    <header>
+      <div class="div1">
+        <img src="imgs/logoPizzaria.png" alt="pizzariaHome logo" />
+      </div>
+
+      <div id="links-head">
+        <ul>
+          <a onmouseover="add('hidden1')" onmouseleave="rem('hidden1')" href=""
+            ><img
+              class="hidden"
+              id="hidden1"
+              src="./imgs/pizzaIcon.png"
+              alt=""
+            />
+            Sobre nós</a
+          >
+          <a onmouseover="add('hidden2')" onmouseleave="rem('hidden2')" href=""
+            ><img
+              class="hidden"
+              id="hidden2"
+              itemid="hidden2"
+              src="./imgs/pizzaIcon.png"
+              alt=""
+            />
+            Cardápio</a
+          >
+          <a onmouseover="add('hidden3')" onmouseleave="rem('hidden3')" href=""
+            ><img
+              onmouseover="add('hidden3')"
+              onmouseleave="rem('hidden3')"
+              class="hidden"
+              id="hidden3"
+              src="./imgs/pizzaIcon.png"
+              alt=""
+            />
+            Avaliações</a
+          >
+          <a onmouseover="add('hidden4')" onmouseleave="rem('hidden4')" href=""
+            ><img
+              class="hidden"
+              id="hidden4"
+              src="./imgs/pizzaIcon.png"
+              alt=""
+            />
+            Localização</a
+          >
+          <a onmouseover="add('hidden5')" onmouseleave="rem('hidden5')" href=""
+            ><img
+              class="hidden"
+              id="hidden5"
+              src="./imgs/pizzaIcon.png"
+              alt=""
+            />
+            Fale conosco</a
+          >
+        </ul>
+      </div>
+    </header>
+
+    <main class="hidden">
+      <img class="downs" src="./imgs/planodefundopizza.jpeg" alt="" />
+
+      <div class="upper">
+        <!-- <div onclick="goLeft(1)" class="arrowLeft">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            fill="currentColor"
+            class="bi bi-caret-left"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"
+            />
+          </svg>
+        </div> -->
+        <div id="roolSides">
+          <img id="downs2" src="./imgs/pizza1.png" alt="pizza" />
+          <p id="txt">Pizza de variados sabores!</p>
+        </div>
+
+        <!--<div onclick="goRight(-1)" class="arrowRight">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            fill="currentColor"
+            class="bi bi-caret-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"
+            />
+          </svg>
+        </div>-->
+      </div>
+    </main>
+
+    <section class="block" class="hidden">
+      <!-- next1-->
+      <div class="next"  >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="56"
+          height="56"
+          fill="currentColor"
+          class="bi bi-file-text"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1z"
+          />
+          <path
+            d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1"
+          />
+        </svg>
+        <p>
+          Fazer<br />
+          pedido
+        </p>
+      </div>
+      <!-- next2-->
+      <div class="next"  >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="56"
+          height="56"
+          fill="currentColor"
+          class="bi bi-pin-map"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"
+          />
+          <path
+            fill-rule="evenodd"
+            d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"
+          />
+        </svg>
+        <p>
+          Nossa<br />
+          Localização
+        </p>
+      </div>
+      <!-- next3-->
+      <div class="next">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="56"
+          height="56"
+          fill="currentColor"
+          class="bi bi-stopwatch"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+          />
+          <path
+            d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+          />
+        </svg>
+        <p>
+          Horário de<br />
+          atendimento
+        </p>
+      </div>
+      <!-- next4-->
+      <div class="next">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="56"
+          height="56"
+          fill="currentColor"
+          class="bi bi-buildings"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z"
+          />
+          <path
+            d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z"
+          />
+        </svg>
+        <p>
+          Nossa<br />
+          estrutura
+        </p>
+      </div>
+      <!-- next5-->
+      <div class="next">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="56"
+          height="56"
+          fill="currentColor"
+          class="bi bi-share-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"
+          />
+        </svg>
+        <p>
+          Compartilhe <br />
+          este site
+        </p>
+      </div>
+    </section>
+
+    <section class="parceiros" class="hidden">
+      <p>As melhores marcas</p>
+      <div class="img-all">
+      <img src="./imgs/marcas/catupiry.png" alt="">
+      <img class="allg" src="./imgs/marcas/coca.png" alt="">
+      <img class="allg" src="./imgs/marcas/doritos.png" alt="">
+      <img class="gomesdacosta" src="./imgs/marcas/gomesdacosta.svg" alt="">
+      <img src="./imgs/marcas/heineken.png" alt="">
+      <img src="./imgs/marcas/m&m.png" alt="">
+      <img src="./imgs/marcas/nestle.png" alt="">
+      <img class="allg" src="./imgs/marcas/nutella.png" alt="">
+      <img class="allg" src="./imgs/marcas/pepsi.png" alt="">
+      </div>
+    </section>
+
+    <section class="block2" class="hidden">
+      <img class="fornopizza" src="./imgs/pizzafornofundo.jpeg" alt="" />
+      <div class="upper2">
+        <div onclick="goLeft2(1)" class="arrowLeft2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            fill="currentColor"
+            class="bi bi-caret-left"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"
+            />
+          </svg>
+        </div>
+        <div id="roolSides2">
+          <img id="downs3" src="./imgs/estrutura1.jpg" alt="pizza" />
+        </div>
+
+        <div onclick="goRight2(-1)" class="arrowRight2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            fill="currentColor"
+            class="bi bi-caret-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"
+            />
+          </svg>
+        </div>
+
+        <div class="h2">
+          <h2>
+            Bem-vindo à nossa pizzaria, onde a <span>tradição</span> se encontra
+            com a <span>modernidade</span> para oferecer uma experiência única a
+            cada cliente. Nossa estrutura foi cuidadosamente projetada para
+            proporcionar <span>conforto</span>, conveniência e, claro, as
+            melhores pizzas da região.
+          </h2>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="scroll" class="hidden">
+      <h3 class="text">
+        <img src="./imgs/pizzaIcon.png" alt="" /> 
+          A melhor pizza da Região
+        <img src="./imgs/pizzaIcon.png" alt="" /> 
+          Funcionamento de Terça a Domingo <img src="./imgs/pizzaIcon.png" alt="" /> 
+          Apartir das 18h  <img src="./imgs/pizzaIcon.png" alt="" />
+          A melhor pizza da Região
+        <img src="./imgs/pizzaIcon.png" alt="" /> 
+          Funcionamento de Terça a Domingo <img src="./imgs/pizzaIcon.png" alt="" /> 
+          Apartir das 18h  <img src="./imgs/pizzaIcon.png" alt="" />
+          A melhor pizza da Região
+         <img src="./imgs/pizzaIcon.png" alt="" /> 
+          Funcionamento de Terça a Domingo <img src="./imgs/pizzaIcon.png" alt="" /> 
+          Apartir das 18h  <img src="./imgs/pizzaIcon.png" alt="" />
+          A melhor pizza da Região
+        <img src="./imgs/pizzaIcon.png" alt="" /> 
+          Funcionamento de Terça a Domingo <img src="./imgs/pizzaIcon.png" alt="" /> 
+          Apartir das 18h  <img src="./imgs/pizzaIcon.png" alt="" />
+          A melhor pizza da Região
+        <img src="./imgs/pizzaIcon.png" alt="" /> 
+          Funcionamento de Terça a Domingo <img src="./imgs/pizzaIcon.png" alt="" /> 
+          Apartir das 18h  <img src="./imgs/pizzaIcon.png" alt="" />
+          A melhor pizza da Região
+         <img src="./imgs/pizzaIcon.png" alt="" /> 
+          Funcionamento de Terça a Domingo <img src="./imgs/pizzaIcon.png" alt="" /> 
+          Apartir das 18h  <img src="./imgs/pizzaIcon.png" alt="" />
+      </h3>
+    </section>
+     
+
+    <section id="localiza" class="hidden">
+      <h1>Atendimento de Terça a Domingo apartir das 18h</h1>
+
+      <div id="localiza-interno">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.365778224364!2d-46.36930132374222!3d-23.447266957412168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce62d3d85afc9d%3A0xb462ae2f36003381!2sR.%20Orlando%20Momento%2C%20409%20-%20Ch%C3%A1cara%20Coqueiro%2C%20Itaquaquecetuba%20-%20SP%2C%2008582-540!5e0!3m2!1spt-BR!2sbr!4v1724367416410!5m2!1spt-BR!2sbr"
+          width="600"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        <!-- <div class="address">
+          <h2>Atendimento:</h2>
+          <div>
+            <p>Terça a Sexta das 18h às 00h</p>
+            <p>Sábado e Domingo das 18h às 01h</p>
+          </div>
+          <div>
+            <p>Endereço: Rua Orlando Momento</p>
+            <p>Bairro: Maria Rosa - Itaquaquecetuba</p>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="avaliacao" class="hidden">
+
+      <div class="buttons">
+        <button class="button-left">&#10216;</button>
+        <button class="button-right">&#10217;</button>
+      </div>
+
+      <div class="av">
+
+      <div class="av1" >
+          <div class="sub-name">
+              <img class="img-perfil" src="imgs/avaliacao/userman1.png" alt="">
+              <p class="name">Suzane Santos</p>           
+          </div>
+
+        <div class="sub-stars">
+          <img class="stars" src="imgs/avaliacao/stars.png" alt="">
+          <p class="title">Excelente pizza!</p>
+        </div>
+
+        <div class="div-avalia">
+          <p>Avaliado em 28 de março de 2024</p>
+          <p class="comment">Uma das melhores pizzas que já comi. Veio conforme pedido além de uma ótima entrega. Amei. </p>
+        </div>
+      </div>
+
+      <div class="av1" >
+        <div class="sub-name">
+            <img class="img-perfil" src="imgs/avaliacao/userman1.png" alt="">
+            <p class="name">Suzane Santos</p>           
+        </div>
+
+      <div class="sub-stars">
+        <img class="stars" src="imgs/avaliacao/stars.png" alt="">
+        <p class="title">Excelente pizza!</p>
+      </div>
+
+      <div class="div-avalia">
+        <p>Avaliado em 28 de março de 2024</p>
+        <p class="comment">Uma das melhores pizzas que já comi. Veio conforme pedido além de uma ótima entrega. Amei. </p>
+      </div>
+    </div>
+
+    <div class="av1" >
+      <div class="sub-name">
+          <img class="img-perfil" src="imgs/avaliacao/userman1.png" alt="">
+          <p class="name">Suzane Santos</p>           
+      </div>
+
+    <div class="sub-stars">
+      <img class="stars" src="imgs/avaliacao/stars.png" alt="">
+      <p class="title">Excelente pizza!</p>
+    </div>
+
+    <div class="div-avalia">
+      <p>Avaliado em 28 de março de 2024</p>
+      <p class="comment">Uma das melhores pizzas que já comi. Veio conforme pedido além de uma ótima entrega. Amei. </p>
+    </div>
+  </div>
+     
+
+      
+    </div>
+    </section>
+
+  <footer id="iconsMidias" class="hidden">
+
+  <div class="footer">
+    <div class="d0">
+      <img src="./imgs/logoPizzaria.png" alt="">
+      <p>​​Os preços apresentados já incluem impostos. Imagens meramente ilustrativas.</p>
+      
+      <p>A Pizza Hut se reserva o direito de alterar e/ou remover itens ou promoções do cardápio sem aviso prévio.</p>
+    </div>
+
+    <div class="d1">
+      <h2>Quem somos</h2>
+      <a href=""><p>Nossa história</p></a>
+       <a href=""><p>Localização</p></a>
+    </div>
+
+    <div class="d2">
+      <h2>Atendimento ao cliente</h2>
+      <div>
+        
+      <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            fill="currentColor"
+            class="bi bi-whatsapp"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+            />
+          </svg>
+          <a href=""><p>Fale conosco</p></a>
+      </div>
+        <h2 class="img-payment">Formas de pagamento</h2>
+          <div class="img-payment2">
+            <img src="./imgs/pagamento/visa.png" alt="">
+            <img src="./imgs/pagamento/mastercard.png" alt="">
+            <img class="sub-img" src="./imgs/pagamento/elo.png" alt="">
+            <img class="sub-img" src="./imgs/pagamento/alelo.png" alt="">
+            <img class="sub-img2" src="./imgs/pagamento/diners.png" alt="">
+          </div>
+    </div>
+
+    <div class="d3">
+    <h2>Conecte-se com nossas redes sociais</h2>
+      <div class="logos-whatsapp">
+        <div>
+          <a href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            fill="currentColor"
+            class="bi bi-whatsapp"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+            />
+          </svg>
+        </a>
+        </div>
+
+        <div>
+          <a href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            fill="currentColor"
+            class="bi bi-instagram"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+            />
+          </svg>
+        </a>
+        </div>
+
+        <div>
+          <a href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-envelope"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+            />
+          </svg>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </footer>
+
+    <script src="pizzariaHome.js">
+
+
+    </script>
+  </body>
+</html>
